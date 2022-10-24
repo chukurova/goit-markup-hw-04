@@ -304,6 +304,9 @@ nav {
 .client-link:hover .client,.client-link:focus .client  {
     fill: var(--bright-color);
 }
+.clients:hover, .clients:focus {
+    border-color: var(--bright-color);
+}
 footer {
     background-color: var(--footer-color);
     padding-top: 60px;
