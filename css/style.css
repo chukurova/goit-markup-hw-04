@@ -244,6 +244,9 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 50%;
+    border-color: transparent;
+    color: var(--main-color);
 }
 .social-media-icon:not(:last-child) {
     margin-right: 10px;
@@ -257,15 +260,15 @@ nav {
     align-items: center;
     justify-content: center;
 }
-.social-media-icon:hover, .social-media-icon:focus .sm-link {
-    border-radius: 50%;
+.sm-link:hover, .sm-link:focus {
     background-color: var(--bright-color);
 }
 .sm-icon {
     width: 22px;
     height: 22px;
+    fill: rgba(175, 177, 184, 1);
 }
-.social-media-icon:hover, .social-media-icon:focus .sm-icon {
+.sm-link:hover .sm-icon, .sm-link:focus .sm-icon {
     fill: var(--main-color);
 }
 .clients-section {
@@ -290,15 +293,16 @@ nav {
     padding: 16px 32px;
 }
 
-.clients:hover .clients:focus .client {
-    fill: var(--main-color);
-}
 .clients:not(:last-child) {
     margin-right: 30px;
 }
 .client {
     width: 106px;
     height: 60px;
+    fill: rgba(175, 177, 184, 1);
+}
+.client-link:hover .client,.client-link:focus .client  {
+    fill: var(--bright-color);
 }
 footer {
     background-color: var(--footer-color);
@@ -313,7 +317,8 @@ footer {
 .contacts {
     color: var(--footer-contacts-color);
 }
-.nav-link:hover, .nav-link:focus, .contact-link:hover, .contact-link:focus {
+.nav-link:hover, .nav-link:focus,
+.contact-link:hover, .contact-link:focus {
     color: var(--bright-color);
 }
 .map {
@@ -353,10 +358,12 @@ footer {
     align-items: center;
     justify-content: center;
 }
-.social-media-icon:hover, .social-media-icon:focus .sm-link-footer{
-    color: var(--bright-color);
+.sm-link-footer:hover,
+.sm-link-footer:focus {
+    background-color: var(--bright-color);
 }
-.social-media-icon:hover, .social-media-icon:focus .sm-icon{
+.sm-link-footer:hover .sm-icon,
+.sm-link-footer:focus .sm-icon {
     fill: var(--main-color);
 }
 .portfolio {
