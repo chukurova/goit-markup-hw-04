@@ -44,6 +44,9 @@ img {
 .header-link {
     color: var(--heading-color);
 }
+.header-link:hover, .header-link:focus {
+    color: var(--bright-color);
+}
 nav {
     margin-right: 344px;
 }
@@ -67,6 +70,9 @@ nav {
 }
 .contact-link {
     color: var(--text-color);
+}
+.contact-link:hover, .contact-link:focus {
+    color: var(--bright-color);
 }
 .container {
     width: 1200px;
@@ -234,6 +240,14 @@ nav {
     width: 206px;
     margin: 0 32px 30px;
 }
+.social-media-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-media-icon:not(:last-child) {
+    margin-right: 10px;
+}
 .sm-link {
     width: 44px;
     height: 44px;
@@ -244,14 +258,15 @@ nav {
     justify-content: center;
 }
 .social-media-icon:hover, .social-media-icon:focus .sm-link {
-    background-color: var(--hover-color);
+    border-radius: 50%;
+    background-color: var(--bright-color);
 }
 .sm-icon {
     width: 22px;
     height: 22px;
 }
 .social-media-icon:hover, .social-media-icon:focus .sm-icon {
-    fill: #FFFFFF;
+    fill: var(--main-color);
 }
 .clients-section {
     margin: 0 auto;
@@ -269,15 +284,13 @@ nav {
 .clients {
     width: 170px;
     height: 92px;
-    border: 1px solid transparent;
+    border: 1px solid #AFB1B8;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 4%;
     padding: 16px 32px;
 }
-.clients:hover, .clients:focus .clinet {
-    background-color: var(--hover-color);
-}
-.clients:hover .client{
+
+.clients:hover .clients:focus .client {
     fill: var(--main-color);
 }
 .clients:not(:last-child) {
@@ -330,14 +343,7 @@ footer {
     display: flex;
     width: 206px;
 }
-.social-media-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.social-media-icon:not(:last-child) {
-    margin-right: 10px;
-}
+
 .sm-link-footer {
     width: 44px;
     height: 44px;
@@ -348,7 +354,10 @@ footer {
     justify-content: center;
 }
 .social-media-icon:hover, .social-media-icon:focus .sm-link-footer{
-    color: var(--hover-color);
+    color: var(--bright-color);
+}
+.social-media-icon:hover, .social-media-icon:focus .sm-icon{
+    fill: var(--main-color);
 }
 .portfolio {
     display: flex;
