@@ -430,7 +430,6 @@ header {
 }
 .gallery-images {
     margin-left: 0;
-    max-width: 370px;
     box-sizing: border-box;
 }
 .gallery-images:hover, .gallery-images:focus {
@@ -442,7 +441,8 @@ header {
 }
 
 .gallery-border {
-    padding: 20px 24px;
+    padding-top: 20px;
+    padding-left: 24px;
     border: 1px solid var(--img-border);
     border-top: none;
 }
