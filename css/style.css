@@ -69,9 +69,10 @@ nav {
     font-weight: 700;
 }
 .contact-link {
+    display: flex;
     color: var(--text-color);
 }
-.contact-link:hover, .contact-link:focus {
+.phone-link:hover .contact-link, .phone-link:focus .contact-link {
     color: var(--bright-color);
 }
 .container {
@@ -107,8 +108,8 @@ nav {
     fill: var(--text-color);
     margin-right: 10px;
 }
-.menu-item:hover .icon-header, 
-.menu-item:focus .icon-header {
+.contact-link:hover .icon-header, 
+.contact-link:focus .icon-header {
     fill: var(--bright-color);
 }
 .hero { 
@@ -425,7 +426,7 @@ header {
 }
 .portfolio-nav {
     display: flex;
-    gap: 25px;
+    gap: 30px;
     flex-wrap: wrap;
 }
 .gallery-images {
@@ -433,9 +434,6 @@ header {
     box-sizing: border-box;
 }
 .gallery-images:hover, .gallery-images:focus {
-    box-sizing: border-box;
-    background: var(--main-color);
-    border: 1px solid var(--img-border);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
