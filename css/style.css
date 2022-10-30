@@ -70,6 +70,7 @@ nav {
 }
 .contact-link {
     display: flex;
+    align-items: center;
     color: var(--text-color);
 }
 .phone-link:hover .contact-link, .phone-link:focus .contact-link {
@@ -253,9 +254,8 @@ nav {
 .social-links {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    width: 206px;
-    margin: 0 32px 30px;
+    justify-content: center;
+    margin-bottom: 30px;
 }
 .social-media-icon {
     display: flex;
@@ -433,7 +433,8 @@ header {
     margin-left: 0;
     box-sizing: border-box;
 }
-.gallery-images:hover, .gallery-images:focus {
+.gallery-images:hover a, .gallery-images:focus a{
+    display: block;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
